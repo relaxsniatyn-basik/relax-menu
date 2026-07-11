@@ -3,14 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RELAX MENU</title>
+
+<title>Relax | Меню</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7f8;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#008080,#00b894);
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+opacity:.95;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:25px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+color:#008080;
+margin-bottom:15px;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+padding:12px 0;
+border-bottom:1px solid #eee;
+font-size:18px;
+}
+
+.item:last-child{
+border:none;
+}
+
+.price{
+font-weight:bold;
+color:#00a884;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#777;
+font-size:14px;
+}
+
+</style>
+
 </head>
 
 <body>
 
+<header>
+
 <h1>RELAX</h1>
 
-<p>Смакуй. Відпочивай. Насолоджуйся моментом.</p>
+<p>Відпочинковий комплекс • Снятин</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🍹 Коктейлі</h2>
+
+<div class="item">
+<span>Мохіто</span>
+<span class="price">250 грн</span>
+</div>
+
+<div class="item">
+<span>Апероль Шприц</span>
+<span class="price">290 грн</span>
+</div>
+
+<div class="item">
+<span>Піна Колада</span>
+<span class="price">280 грн</span>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>☕ Кава</h2>
+
+<div class="item">
+<span>Еспресо</span>
+<span class="price">50 грн</span>
+</div>
+
+<div class="item">
+<span>Капучино</span>
+<span class="price">75 грн</span>
+</div>
+
+<div class="item">
+<span>Лате</span>
+<span class="price">85 грн</span>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© Relax Sniatyn
+
+</footer>
 
 </body>
 </html>
