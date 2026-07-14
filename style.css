@@ -1398,3 +1398,145 @@ body.kitchen-page .drink-price{
     }
 
 }
+/* ===== ФІНАЛЬНА МОБІЛЬНА ВЕРСІЯ КУХНІ ТА ДЕСЕРТІВ ===== */
+
+@media (max-width: 800px){
+
+    body.kitchen-page .menu-section,
+    body.desserts-page .menu-section{
+        width:100% !important;
+        max-width:none !important;
+        margin:30px auto 45px !important;
+    }
+
+    body.kitchen-page .drinks,
+    body.desserts-page .drinks,
+    body.kitchen-page .menu-section .drinks,
+    body.desserts-page .menu-section .drinks{
+        display:grid !important;
+        grid-template-columns:minmax(0, 1fr) !important;
+        width:calc(100% - 24px) !important;
+        max-width:560px !important;
+        margin:20px auto !important;
+        gap:20px !important;
+    }
+
+    body.kitchen-page .drink-card,
+    body.desserts-page .drink-card{
+        width:100% !important;
+        min-width:0 !important;
+        max-width:none !important;
+        height:auto !important;
+    }
+
+    body.kitchen-page .drink-card img,
+    body.desserts-page .drink-card img{
+        width:100% !important;
+        height:240px !important;
+        padding:0 !important;
+        object-fit:cover !important;
+        object-position:center !important;
+        display:block !important;
+    }
+
+    body.kitchen-page .drink-info,
+    body.desserts-page .drink-info{
+        width:100% !important;
+        min-height:auto !important;
+        box-sizing:border-box !important;
+        padding:18px !important;
+    }
+
+    body.kitchen-page .drink-name,
+    body.desserts-page .drink-name{
+        font-size:20px !important;
+        line-height:1.25 !important;
+        word-break:normal !important;
+        overflow-wrap:normal !important;
+    }
+
+    body.kitchen-page .drink-price,
+    body.desserts-page .drink-price{
+        font-size:15px !important;
+        padding:8px 13px !important;
+    }
+
+    body.kitchen-page .section-title,
+    body.desserts-page .section-title{
+        width:calc(100% - 28px) !important;
+        margin:0 auto 18px !important;
+        padding:0 !important;
+        font-size:25px !important;
+    }
+} 
+@media (max-width: 420px){
+
+    body.kitchen-page .drinks,
+    body.desserts-page .drinks,
+    body.kitchen-page .menu-section .drinks,
+    body.desserts-page .menu-section .drinks{
+        width:calc(100% - 20px) !important;
+    }
+
+    body.kitchen-page .drink-card img,
+    body.desserts-page .drink-card img{
+        height:220px !important;
+    }
+
+    body.kitchen-page .drink-info,
+    body.desserts-page .drink-info{
+        flex-direction:column !important;
+        align-items:flex-start !important;
+        gap:12px !important;
+        padding:16px !important;
+    }
+
+    body.kitchen-page .drink-name,
+    body.desserts-page .drink-name{
+        font-size:19px !important;
+    }
+
+    body.kitchen-page .section-title,
+    body.desserts-page .section-title{
+        font-size:23px !important;
+    }
+}
+/* ===== ФОТО БАСЕЙНУ НА ГОЛОВНІЙ ===== */
+
+.hero{
+    min-height:100vh;
+    background-image:
+        linear-gradient(rgba(0,55,68,.42), rgba(0,55,68,.48)),
+        url("images/hero.jpg") !important;
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+}
+@media (max-width:800px){
+
+    .hero{
+        min-height:92vh;
+        background-position:center center !important;
+    }
+
+    .hero-content{
+        width:calc(100% - 32px);
+        margin:auto;
+        text-align:center;
+    }
+
+    .hero .logo{
+        max-width:150px;
+        height:auto;
+    }
+
+    .hero h1{
+        font-size:34px;
+        line-height:1.15;
+    }
+
+    .hero p{
+        font-size:17px;
+        line-height:1.45;
+    }
+}
