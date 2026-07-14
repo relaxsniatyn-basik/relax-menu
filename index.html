@@ -1,155 +1,74 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відпочинковий комплекс Relax</title>
 
-<title>Relax | Меню</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f5f7f8;
-color:#333;
-}
-
-header{
-background:linear-gradient(135deg,#008080,#00b894);
-color:white;
-padding:50px 20px;
-text-align:center;
-}
-
-header h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-header p{
-font-size:18px;
-opacity:.95;
-}
-.logo{
-    width: 220px;
-    height: auto;
-    margin: 0 auto 20px;
-    display: block;
-}
-.container{
-max-width:900px;
-margin:auto;
-padding:25px;
-}
-
-.card{
-background:white;
-border-radius:18px;
-padding:25px;
-margin-bottom:20px;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
-
-.card h2{
-color:#008080;
-margin-bottom:15px;
-}
-
-.item{
-display:flex;
-justify-content:space-between;
-padding:12px 0;
-border-bottom:1px solid #eee;
-font-size:18px;
-}
-
-.item:last-child{
-border:none;
-}
-
-.price{
-font-weight:bold;
-color:#00a884;
-}
-
-footer{
-text-align:center;
-padding:30px;
-color:#777;
-font-size:14px;
-}
-
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="hero">
 
-<img src="logo.jpg" alt="Relax" class="logo">
+    <div class="overlay"></div>
 
-<p>Відпочинковий комплекс • Снятин</p>
+    <div class="hero-content">
+
+        <img src="images/logo.png" alt="Relax" class="logo">
+
+        <h1>Відпочинковий комплекс Relax</h1>
+
+        <p>Місце, де кожна мить стає відпочинком.</p>
+
+        <a href="#menu" class="button">
+            Переглянути меню
+        </a>
+
+    </div>
 
 </header>
+<section id="menu" class="menu">
 
-<div class="container">
+    <h2>Меню Relax</h2>
 
-<div class="card">
+    <div class="categories">
 
-<h2>🍹 Коктейлі</h2>
+<a href="kitchen.html" class="category">
+    <img src="images/kitchen.jpg" alt="Кухня">
+    <span>Кухня</span>
+</a>
 
-<div class="item">
-<span>Мохіто</span>
-<span class="price">170 грн</span>
-</div>
+        <a href="cocktails.html" class="category">
+    <img src="images/cocktails.jpg" alt="Напої з настроєм">
+    <span>Напої з настроєм</span>
+</a>
 
-<div class="item">
-<span>Апероль Шприц</span>
-<span class="price">190 грн</span>
-</div>
+        <a href="coffee.html" class="category">
+    <img src="images/coffee.jpg" alt="Кава">
+    <span>Кава</span>
+</a>
 
-<div class="item">
-<span>Піна Колада</span>
-<span class="price">190 грн</span>
-</div>
+       <a href="soft.html" class="category">
+    <img src="images/soft.jpg" alt="Безалкогольні напої">
+    <span>Безалкогольні напої</span>
+</a>
 
-</div>
+       <a href="bar.html" class="category">
+    <img src="images/bar.jpg" alt="Бар">
+    <span>Бар</span>
+</a>
 
-<div class="card">
+       <a href="desserts.html" class="category">
+    <img src="images/desserts.jpg" alt="Десерти">
+    <span>Десерти</span>
+</a>
 
-<h2>☕ Кава</h2>
+    </div>
 
-<div class="item">
-<span>Еспресо</span>
-<span class="price">30 грн</span>
-</div>
-
-<div class="item">
-<span>Капучино</span>
-<span class="price">55 грн</span>
-</div>
-
-<div class="item">
-<span>Лате</span>
-<span class="price">55 грн</span>
-</div>
-
-</div>
-
-</div>
-
-<footer>
-
-© Relax Sniatyn
-
-</footer>
+</section>
+<script src="script.js"></script>
 
 </body>
 </html>
