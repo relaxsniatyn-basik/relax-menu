@@ -1540,3 +1540,22 @@ body.kitchen-page .drink-price{
         line-height:1.45;
     }
 }
+/* ===== ГОЛОВНЕ ФОТО БАСЕЙНУ ===== */
+
+html body #main-hero{
+    min-height:100vh !important;
+
+    background:
+        linear-gradient(
+            rgba(0, 55, 68, 0.38),
+            rgba(0, 55, 68, 0.48)
+        ),
+        url("./images/pool-main.jpg") center center / cover no-repeat !important;
+}
+
+@media (max-width:800px){
+    html body #main-hero{
+        min-height:90vh !important;
+        background-position:center center !important;
+    }
+}
